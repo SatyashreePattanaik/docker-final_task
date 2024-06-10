@@ -4,7 +4,7 @@ pipeline {
     stage ('shell') {
       steps {
         git branch: 'shell-script', url: 'https://github.com/SatyashreePattanaik/docker-final_task.git'
-        sh 'shell.sh'
+        sh ' bash shell.sh'
       }
     }
   }
