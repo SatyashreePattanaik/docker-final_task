@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage ('build') {
+    stage ('shell') {
       steps {
-        git branch: 'maven', url:'https://github.com/SatyashreePattanaik/docker-final_task.git'
-        sh 'mvn clean install'
+        git branch: 'shell-script', url:'https://github.com/SatyashreePattanaik/docker-final_task.git'
+        sh 'bash shell.sh'
       }
     }
   }
