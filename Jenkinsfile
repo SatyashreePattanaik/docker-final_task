@@ -4,7 +4,7 @@ pipeline {
     stage ('python') {
       steps {
         git branch: 'python', url: 'https://github.com/SatyashreePattanaik/docker-final_task.git'
-        sh 'python python.py'
+        sh 'python3 python.py'
       }
     }
   }
